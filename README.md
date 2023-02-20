@@ -12,3 +12,5 @@
  - map함수를 이용해서 component를 render할 때는 꼭 고유의 key가 필요함
 
  - hook을 만들때 앞에 use 붙이기
+
+ - 하위 폴더로 이동하고 싶을 때 cd (폴더 명)
