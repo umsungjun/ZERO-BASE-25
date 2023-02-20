@@ -18,31 +18,35 @@
 
     const rootElement = ReactDOM.createRoot(document.getElementById("root"))
     const number = [{ number: 1, color: 'pink' }, { number: 2, color: 'blue' }, { number: 3, color: 'green' }]
-    // Welcome component제작
-    // props의 형태 {name: '엄성준'} , props는 객체 형태
-    // function Welcome({ name }) { // component를 생성할 때 첫 번째 문자는 꼭 대문자로
-    //     return (
-    //         <h1>Hello, {name}</h1>
-    //     )
-    // }
-    // 화살표 함수 component
-    // const Welcome = ({ name }) => { // 화살표 함수에서 대괄호를 사용했다면 return을 꼭 써줘야 함
-    //     return (
-    //         <h1>Hello, {name}</h1>
-    //     )
-    // }
-    const Button = ({ number, color }) => {
-        return (<button style={{ backgroundColor: `${color}` }}>{number}</button >)
+
+    const Button = ({ number, color, clickFunction }) => { // button의 본체
+
+        const handelClickButton = (e) => {
+            console.log(e.target.style.backgroundColor)
+            clickFunction(e.target.style.backgroundColor)
+        }
+
+        return (<button onClick={handelClickButton} style={{ backgroundColor: `${color}` }}>{number}</button >)
     }
 
-    const element = (<React.Fragment>
-        {number.map((item) => {
-            return (
-                <Button key={item.number} number={item.number} color={item.color} />
-            )
-        })}
-    </React.Fragment>)
+    function HomePage() {
+        const [selectedButton, setSelectedButton] = React.useState('')
+
+
+        return (<React.Fragment>
+            {number.map((item) => {
+                return (
+                    <Button key={item.number} number={item.number} color={item.color} clickFunction={setSelectedButton} />
+                )
+            })}
+            <h1>내가 선택한 버튼의 색은 {selectedButton}색 입니다.</h1>
+        </React.Fragment>)
+    }
+
+    const element = <HomePage />
+
     rootElement.render(element)
+
 </script>
 
 </html>
