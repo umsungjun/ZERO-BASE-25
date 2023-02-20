@@ -2,7 +2,7 @@ import React from "react";
 
 
 export default function Event(): React.ReactElement {
-    const handleClickButton = () => {
+    const handleClickButton = (e) => {
         console.log('handleClickButton')
 
     }
