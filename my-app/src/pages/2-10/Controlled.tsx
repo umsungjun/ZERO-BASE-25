@@ -13,6 +13,7 @@ export default function Controlled(): React.ReactElement {
         event?.preventDefault() // 이벤트가 존재한다면 preventDefault()를 실행
     }
 
+    // 다중 제어
     const handleChange = (e: React.ChangeEvent) => {
         if (e.target instanceof HTMLInputElement) {
             setName(e.target.value)
@@ -23,14 +24,6 @@ export default function Controlled(): React.ReactElement {
         }
 
     }
-
-    // const handleChangeEssay = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    //     setEssay(e.target.value)
-    // }
-
-    // const handleChangeFlavor = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    //     setFlavor(e.target.value)
-    // }
 
     return (
         <form onSubmit={handleSubmit}>
