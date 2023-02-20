@@ -10,3 +10,5 @@
  - '<React.Fragment>'는 부모역할을 할때 사용하는 것 같음
 
  - map함수를 이용해서 component를 render할 때는 꼭 고유의 key가 필요함
+
+ - hook을 만들때 앞에 use 붙이기
