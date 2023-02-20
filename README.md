@@ -14,3 +14,9 @@
  - hook을 만들때 앞에 use 붙이기
 
  - 하위 폴더로 이동하고 싶을 때 cd (폴더 명)
+
+ - componentDidMount는 DOM이 모두 rendering된 후 에 실행되는 함수
+
+ - DOM이 업데이트 될 때마다 componentDidUpdate 함수가 실행 됨
+
+ - 이전에 class 방식에서는 상태관리를 하기가 수월해서 함수형 보다 많이 쓰였지만 현재는 hook함수들로 인해 함수형을 더 많이 사용한다.
