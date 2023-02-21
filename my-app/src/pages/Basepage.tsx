@@ -11,12 +11,12 @@ import List from './2-9/List';
 import Calcurator from './2-11/Calcurator';
 import Composite from './2-12/Composite'
 import Special from './2-12/Special';
+import FilterableProductTable from './2-13/FilterableProductTable';
 function Basepage() {
 
   return (
     <>
-      <div>Hello React</div>
-      <Special />
+      <FilterableProductTable />
     </>
   );
 }
