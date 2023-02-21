@@ -8,7 +8,7 @@ import ClassClock from './2-6/ClassClock';
 import Event from './2-7/Event';
 import Greeting from './2-8/Greeting';
 import List from './2-9/List';
-
+import Calcurator from './2-11/Calcurator';
 
 function Basepage() {
 
@@ -17,8 +17,7 @@ function Basepage() {
       <div>
         Hello React
       </div>
-      <Controlled />
-      <UnControlled />
+      <Calcurator />
     </>
   );
 }
