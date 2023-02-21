@@ -9,15 +9,14 @@ import Event from './2-7/Event';
 import Greeting from './2-8/Greeting';
 import List from './2-9/List';
 import Calcurator from './2-11/Calcurator';
-
+import Composite from './2-12/Composite'
+import Special from './2-12/Special';
 function Basepage() {
 
   return (
     <>
-      <div>
-        Hello React
-      </div>
-      <Calcurator />
+      <div>Hello React</div>
+      <Special />
     </>
   );
 }
