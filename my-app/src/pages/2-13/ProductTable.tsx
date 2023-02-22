@@ -32,7 +32,7 @@ export default function ProductTable(props: Props): React.ReactElement {
             if (product.category !== lastCategory) {
                 rows.push(<ProductCategoryRow category={product.category} key={product.name} />)
             }
-            rows.push(
+            rows.push( //
                 <ProductRow
                     product={product}
                     key={product.name} />
