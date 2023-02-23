@@ -1,12 +1,12 @@
+import Emotion from './3-2/Emotion';
+import StyledComponent from './3-2/StyledComponent';
 import './App.css';
-
-import Moment from './3-1/Moment';
-import Day from './3-1/Day';
 
 function App() {
   return (
     <div className="App">
-      <Day />
+      <Emotion />
+      <StyledComponent />
     </div>
   );
 }
