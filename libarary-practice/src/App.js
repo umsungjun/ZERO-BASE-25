@@ -1,12 +1,10 @@
-import Emotion from './3-2/Emotion';
-import StyledComponent from './3-2/StyledComponent';
+import BootStrap from './3-3/BootStrap';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Emotion />
-      <StyledComponent />
+      <BootStrap />
     </div>
   );
 }
