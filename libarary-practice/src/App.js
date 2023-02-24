@@ -1,10 +1,10 @@
-import BootStrap from './3-3/BootStrap';
+import Mocking from './3-4/Mocking';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <BootStrap />
+      <Mocking />
     </div>
   );
 }
