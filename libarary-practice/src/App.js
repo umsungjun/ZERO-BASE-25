@@ -1,15 +1,10 @@
-import { createStore } from '@reduxjs/toolkit';
-import { Provider } from 'react-redux';
 import './App.css';
-import Counter from './pages/3-5/Counter';
+import Profile from './pages/3-6/Profile';
 
 function App() {
-  const store = createStore(rootReducer);
   return (
     <div className="App">
-      <Provider store={store}>
-        <Counter />
-      </Provider>
+      <Profile />
     </div>
   );
 }
