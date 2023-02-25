@@ -11,8 +11,6 @@ export default function Profile() {
     return <li>{props.title}</li>;
   };
 
-  useEffect(() => {}, [data]);
-
   console.log(error);
   console.log(data);
   return (
